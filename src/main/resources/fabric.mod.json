@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "socky",
+  "version": "${version}",
+  "name": "socky",
+  "description": "A Minecraft mod that adds Socky.",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/socky/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "net.sockmc.socky.client.MainClient"
+    ],
+    "main": [
+      "net.sockmc.socky.Main"
+    ]
+  },
+  "mixins": [
+    "socky.mixins.json",
+    {
+      "config": "socky.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

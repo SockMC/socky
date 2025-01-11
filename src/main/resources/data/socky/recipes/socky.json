@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    { "item": "socky:socky_body" },
+    { "item": "socky:socky_cape" },
+    { "item": "socky:socky_pants" },
+    { "item": "socky:socky_scarf" }
+  ],
+  "result": {
+    "item": "socky:socky",
+    "count": 1
+  }
+}

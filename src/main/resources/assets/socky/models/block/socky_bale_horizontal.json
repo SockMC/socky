@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable_with_bottom",
+  "textures": {
+    "bottom": "socky:block/socky_bale_bottom",
+    "front": "socky:block/socky_bale_side",
+    "side": "socky:block/socky_bale_side",
+    "top": "socky:block/socky_bale_top"
+  }
+}
