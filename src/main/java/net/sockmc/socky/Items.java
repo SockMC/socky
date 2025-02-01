@@ -13,6 +13,7 @@ public class Items {
     public static final Item SOCKY_PANTS = new Item(new Item.Settings().maxCount(16));
     public static final Item SOCKY_SCARF = new Item(new Item.Settings().maxCount(16));
 
+    public static final BlockItem AMBROSE = new BlockItem(Blocks.AMBROSE_BLOCK, new Item.Settings().maxCount(16));
     public static final BlockItem SOCKY = new BlockItem(Blocks.SOCKY_BLOCK, new Item.Settings().maxCount(16));
     public static final BlockItem SOCKY_BALE = new BlockItem(Blocks.SOCKY_BALE, new Item.Settings());
 
@@ -22,6 +23,7 @@ public class Items {
         Registry.register(Registries.ITEM, Ids.SOCKY_PANTS, Items.SOCKY_PANTS);
         Registry.register(Registries.ITEM, Ids.SOCKY_SCARF, Items.SOCKY_SCARF);
 
+        Registry.register(Registries.ITEM, Ids.AMBROSE, Items.AMBROSE);
         Registry.register(Registries.ITEM, Ids.SOCKY, Items.SOCKY);
         Registry.register(Registries.ITEM, Ids.SOCKY_BALE, Items.SOCKY_BALE);
 
