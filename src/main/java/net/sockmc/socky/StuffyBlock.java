@@ -11,11 +11,11 @@ import net.minecraft.util.math.Direction;
 import net.minecraft.world.WorldView;
 import org.jetbrains.annotations.Nullable;
 
-public class SockyBlock extends Block {
+public class StuffyBlock extends Block {
     // a default direction property "facing" with cardinal direction values (no up/down)
     static final DirectionProperty FACING = HorizontalFacingBlock.FACING;
 
-    public SockyBlock(Settings settings) {
+    public StuffyBlock(Settings settings) {
         super(settings);
         setDefaultState(getDefaultState().with(FACING, Direction.NORTH));
     }

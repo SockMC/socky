@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "socky:block/ambrose"
+    },
+    "facing=south": {
+      "model": "socky:block/ambrose",
+      "y": 180
+    },
+    "facing=east": {
+      "model": "socky:block/ambrose",
+      "y": 90
+    },
+    "facing=west": {
+      "model": "socky:block/ambrose",
+      "y": -90
+    }
+  }
+}
