@@ -1,13 +1,15 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
+    " # ",
+    "###",
     "###"
   ],
   "key": {
-    "#": { "item": "minecraft:light_blue_wool" }
+    "#": "minecraft:red_wool"
   },
   "result": {
-    "item": "socky:socky_scarf",
+    "id": "socky:socky_cape",
     "count": 1
   }
 }

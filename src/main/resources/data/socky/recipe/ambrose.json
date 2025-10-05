@@ -6,10 +6,10 @@
     "# #"
   ],
   "key": {
-    "#": { "item": "minecraft:brown_wool" }
+    "#": "minecraft:brown_wool"
   },
   "result": {
-    "item": "socky:ambrose",
+    "id": "socky:ambrose",
     "count": 1
   }
 }

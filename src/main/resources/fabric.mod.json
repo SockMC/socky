@@ -10,6 +10,9 @@
   "icon": "assets/socky/icon.png",
   "environment": "*",
   "entrypoints": {
+    "fabric-datagen": [
+      "net.sockmc.socky.client.TemplateDataGenerator"
+    ],
     "client": [
       "net.sockmc.socky.client.MainClient"
     ],
@@ -27,6 +30,6 @@
   "depends": {
     "fabricloader": ">=${loader_version}",
     "fabric": "*",
-    "minecraft": "${minecraft_version}"
+    "minecraft": "${supported_minecraft_versions}"
   }
 }

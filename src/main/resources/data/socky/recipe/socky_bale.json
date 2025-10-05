@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "socky:socky",
+    "socky:socky",
+    "socky:socky",
+    "socky:socky",
+    "socky:socky",
+    "socky:socky",
+    "socky:socky",
+    "socky:socky",
+    "socky:socky"
+  ],
+  "result": {
+    "id": "socky:socky_bale",
+    "count": 1
+  }
+}
