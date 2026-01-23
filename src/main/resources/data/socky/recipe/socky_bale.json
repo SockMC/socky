@@ -12,7 +12,7 @@
     { "item": "socky:socky" }
   ],
   "result": {
-    "item": "socky:socky_bale",
+    "id": "socky:socky_bale",
     "count": 1
   }
 }
