@@ -6,6 +6,7 @@ public class Ids {
     public static final String MOD_ID = "socky";
 
     public static final Identifier AMBROSE = new Identifier(MOD_ID, "ambrose");
+    public static final Identifier MR_OLIVE = new Identifier(MOD_ID, "mr_olive");
     public static final Identifier SOCKY = new Identifier(MOD_ID, "socky");
     public static final Identifier SOCKY_BALE = new Identifier(MOD_ID, "socky_bale");
     public static final Identifier SOCKY_BODY = new Identifier(MOD_ID, "socky_body");
