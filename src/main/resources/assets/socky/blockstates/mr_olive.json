@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "socky:block/mr_olive"
+    },
+    "facing=south": {
+      "model": "socky:block/mr_olive",
+      "y": 180
+    },
+    "facing=east": {
+      "model": "socky:block/mr_olive",
+      "y": 90
+    },
+    "facing=west": {
+      "model": "socky:block/mr_olive",
+      "y": -90
+    }
+  }
+}

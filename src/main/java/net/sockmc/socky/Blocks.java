@@ -19,6 +19,10 @@ public class Blocks {
             .sounds(BlockSoundGroup.WOOL)
             .nonOpaque()                  // otherwise face is missing on neighboring blocks
     );
+    public static final Block MR_OLIVE_BLOCK = register(Ids.MR_OLIVE, StuffyBlock::new, AbstractBlock.Settings.create()
+            .sounds(BlockSoundGroup.WOOL)
+            .nonOpaque()                  // otherwise face is missing on neighboring blocks
+    );
     public static final Block SOCKY_BALE = register(Ids.SOCKY_BALE, PillarBlock::new, AbstractBlock.Settings.create()
             .sounds(BlockSoundGroup.WOOL)
     );
@@ -31,6 +35,7 @@ public class Blocks {
     {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(itemGroup ->{
             itemGroup.add(AMBROSE_BLOCK.asItem());
+            itemGroup.add(MR_OLIVE_BLOCK.asItem());
             itemGroup.add(SOCKY_BALE.asItem());
             itemGroup.add(SOCKY_BLOCK.asItem());
         });
