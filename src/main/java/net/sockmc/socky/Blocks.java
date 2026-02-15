@@ -8,18 +8,18 @@ import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 
 public class Blocks {
-    public static final Block AMBROSE_BLOCK = new StuffyBlock(AbstractBlock.Settings.create()
-            .sounds(BlockSoundGroup.WOOL)
-            .nonOpaque()                  // otherwise face is missing on neighboring blocks
+    public static final Block AMBROSE_BLOCK = new StuffyBlock(
+            AbstractBlock.Settings.create().sounds(BlockSoundGroup.WOOL).nonOpaque(),
+            Block.createCuboidShape(2, 0, 3, 14, 15, 16)
     );
-    public static final Block MR_OLIVE_BLOCK = new StuffyBlock(AbstractBlock.Settings.create()
-            .sounds(BlockSoundGroup.WOOL)
-            .nonOpaque()                  // otherwise face is missing on neighboring blocks
+    public static final Block MR_OLIVE_BLOCK = new StuffyBlock(
+            AbstractBlock.Settings.create().sounds(BlockSoundGroup.WOOL).nonOpaque(),
+            Block.createCuboidShape(3, 0, 7, 13, 11, 9)
     );
     public static final Block SOCKY_BALE = new PillarBlock(AbstractBlock.Settings.create().sounds(BlockSoundGroup.WOOL));
-    public static final Block SOCKY_BLOCK = new StuffyBlock(AbstractBlock.Settings.create()
-            .sounds(BlockSoundGroup.WOOL)
-            .nonOpaque()                  // otherwise face is missing on neighboring blocks
+    public static final Block SOCKY_BLOCK = new StuffyBlock(
+            AbstractBlock.Settings.create().sounds(BlockSoundGroup.WOOL).nonOpaque(),
+            Block.createCuboidShape(3, 0, 4, 13, 14, 12)
     );
 
     public static void initialize()
