@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " ##",
+    "B##",
+    " WW"
+  ],
+  "key": {
+    "#": "minecraft:light_gray_wool",
+    "B": "minecraft:black_wool",
+    "W": "minecraft:white_wool"
+  },
+  "result": {
+    "id": "socky:pushpush",
+    "count": 1
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "socky:block/pushpush"
+    },
+    "facing=south": {
+      "model": "socky:block/pushpush",
+      "y": 180
+    },
+    "facing=east": {
+      "model": "socky:block/pushpush",
+      "y": 90
+    },
+    "facing=west": {
+      "model": "socky:block/pushpush",
+      "y": -90
+    }
+  }
+}
