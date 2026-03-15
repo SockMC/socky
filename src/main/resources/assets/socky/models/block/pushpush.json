@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.11",
+	"format_version": "1.9.0",
 	"credit": "Made with Blockbench",
 	"parent": "minecraft:block/orientable_with_bottom",
 	"texture_size": [32, 32],
@@ -141,7 +141,7 @@
 		{
 			"from": [7.9, 5.5, 12],
 			"to": [8.9, 7.5, 12.9],
-			"rotation": {"angle": 32.5, "axis": "z", "origin": [7.9, 5.5, 11.9]},
+			"rotation": {"angle": 22.5, "axis": "z", "origin": [7.9, 5.5, 11.9]},
 			"faces": {
 				"north": {"uv": [12, 12.5, 12.5, 13.5], "texture": "#0"},
 				"east": {"uv": [12.5, 12.5, 13, 13.5], "texture": "#0"},
@@ -204,7 +204,13 @@
 			}
 		}
 	],
-	"display": {},
+	"display": {
+		"gui": {
+			"rotation": [12, 150, 1],
+			"translation": [0.5, 4.75, 2],
+			"scale": [1.2, 1.2, 1.2]
+		}
+	},
 	"groups": [
 		{
 			"name": "group",
