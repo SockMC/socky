@@ -15,6 +15,7 @@ public class Items {
 
     public static final BlockItem AMBROSE = new BlockItem(Blocks.AMBROSE_BLOCK, new Item.Settings().maxCount(16));
     public static final BlockItem MR_OLIVE = new BlockItem(Blocks.MR_OLIVE_BLOCK, new Item.Settings().maxCount(16));
+    public static final BlockItem PUSHPUSH = new BlockItem(Blocks.PUSHPUSH_BLOCK, new Item.Settings().maxCount(16));
     public static final BlockItem SOCKY = new BlockItem(Blocks.SOCKY_BLOCK, new Item.Settings().maxCount(16));
     public static final BlockItem SOCKY_BALE = new BlockItem(Blocks.SOCKY_BALE, new Item.Settings());
 
@@ -26,6 +27,7 @@ public class Items {
 
         Registry.register(Registries.ITEM, Ids.AMBROSE, Items.AMBROSE);
         Registry.register(Registries.ITEM, Ids.MR_OLIVE, Items.MR_OLIVE);
+        Registry.register(Registries.ITEM, Ids.PUSHPUSH, Items.PUSHPUSH);
         Registry.register(Registries.ITEM, Ids.SOCKY, Items.SOCKY);
         Registry.register(Registries.ITEM, Ids.SOCKY_BALE, Items.SOCKY_BALE);
 
