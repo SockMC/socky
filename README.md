@@ -23,3 +23,7 @@ It adds the following items with associated recipes and models:
 
 It is built on the Fabric mod loader and is available for the following versions of Minecraft Java Edition:
 - `1.20.1`
+- `1.21.1`
+- `1.21.4`
+- `1.21.6`
+- `1.21.8` and newer
