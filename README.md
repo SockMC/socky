@@ -19,6 +19,7 @@ It adds the following items with associated recipes and models:
 - Blocky
 - Ambrose
 - Mr. Olive
+- Push Push
 
 It is built on the Fabric mod loader and is available for the following versions of Minecraft Java Edition:
 - `1.20.1`

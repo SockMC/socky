@@ -16,6 +16,10 @@ public class Blocks {
             AbstractBlock.Settings.create().sounds(BlockSoundGroup.WOOL).nonOpaque(),
             Block.createCuboidShape(3, 0, 7, 13, 11, 9)
     );
+    public static final Block PUSHPUSH_BLOCK = new StuffyBlock(
+            AbstractBlock.Settings.create().sounds(BlockSoundGroup.WOOL).nonOpaque(),
+            Block.createCuboidShape(4, 0, 1, 12, 7, 13)
+    );
     public static final Block SOCKY_BALE = new PillarBlock(AbstractBlock.Settings.create().sounds(BlockSoundGroup.WOOL));
     public static final Block SOCKY_BLOCK = new StuffyBlock(
             AbstractBlock.Settings.create().sounds(BlockSoundGroup.WOOL).nonOpaque(),
@@ -26,12 +30,14 @@ public class Blocks {
     {
         Registry.register(Registries.BLOCK, Ids.AMBROSE, AMBROSE_BLOCK);
         Registry.register(Registries.BLOCK, Ids.MR_OLIVE, MR_OLIVE_BLOCK);
+        Registry.register(Registries.BLOCK, Ids.PUSHPUSH, PUSHPUSH_BLOCK);
         Registry.register(Registries.BLOCK, Ids.SOCKY_BALE, SOCKY_BALE);
         Registry.register(Registries.BLOCK, Ids.SOCKY, SOCKY_BLOCK);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(itemGroup ->{
             itemGroup.add(AMBROSE_BLOCK.asItem());
             itemGroup.add(MR_OLIVE_BLOCK.asItem());
+            itemGroup.add(PUSHPUSH_BLOCK.asItem());
             itemGroup.add(SOCKY_BALE.asItem());
             itemGroup.add(SOCKY_BLOCK.asItem());
         });
