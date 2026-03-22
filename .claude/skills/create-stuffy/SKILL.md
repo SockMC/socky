@@ -13,7 +13,20 @@ All examples use `mr_test` / `MR_TEST` / `Mr. Test` as a stand-in. Substitute th
 
 ---
 
-## Step 0 — Gather inputs
+## Step 0 — Verify branch
+
+Run `git branch --show-current` and check the result.
+
+- **If the current branch is `main`**: proceed normally.
+- **If the current branch is anything else**: stop immediately and tell the user:
+
+  > `/create-stuffy` must be run from the `main` branch. You are currently on `<branch>`. Please switch to `main` and re-run the command.
+
+  Do not proceed with any further steps.
+
+---
+
+## Step 1 — Gather inputs
 
 Parse the skill invocation for the following. Ask the user for any that are missing before proceeding.
 
@@ -31,7 +44,7 @@ Derived values used throughout:
 
 ---
 
-## Step 1 — Validate source assets
+## Step 2 — Validate source assets
 
 Check that both of these files exist:
 
@@ -70,7 +83,7 @@ A correct `"textures"` block for `mr_test` looks like:
 
 ---
 
-## Step 2 — Check textures
+## Step 3 — Check textures
 
 Derive the expected block texture path(s) from the `"textures"` object parsed in Step 1. For each unique non-`"particle"` texture value (e.g., `"socky:block/mr_test"`), convert the namespace path to a file path by the rule:
 
@@ -99,7 +112,7 @@ src/main/resources/assets/socky/textures/item/{snake_id}.png
 
 ---
 
-## Step 3 — Check and create data/asset files
+## Step 4 — Check and create data/asset files
 
 For each file below, check whether it already exists.
 
@@ -204,7 +217,7 @@ If the recipe already exists, validate it as JSON and check that `"result"."id"`
 
 ---
 
-## Step 4 — Update `lang/en_us.json`
+## Step 5 — Update `lang/en_us.json`
 
 File: `src/main/resources/assets/socky/lang/en_us.json`
 
@@ -214,7 +227,7 @@ If the key already exists with the correct value, skip silently. If it exists wi
 
 ---
 
-## Step 5 — Update `Ids.java`
+## Step 6 — Update `Ids.java`
 
 File: `src/main/java/net/sockmc/socky/Ids.java`
 
@@ -230,7 +243,7 @@ If the constant already exists, confirm its value matches and skip.
 
 ---
 
-## Step 6 — Update `Blocks.java`
+## Step 7 — Update `Blocks.java`
 
 File: `src/main/java/net/sockmc/socky/Blocks.java`
 
@@ -290,7 +303,7 @@ Insert it in alphabetical order by constant name among the existing `add` calls.
 
 ---
 
-## Step 7 — Update `README.md`
+## Step 8 — Update `README.md`
 
 File: `README.md`
 
@@ -300,7 +313,7 @@ If an entry for `{display_name}` already exists in the list, skip silently.
 
 ---
 
-## Step 8 — Bump version in `gradle.properties`
+## Step 9 — Bump version in `gradle.properties`
 
 File: `gradle.properties`
 
@@ -337,7 +350,7 @@ Update the `mod_version` line in `gradle.properties` with the computed next vers
 
 ---
 
-## Step 9 — Summary
+## Step 10 — Summary
 
 After completing all steps, print a checklist showing which files were:
 - ✓ Found and validated (existing)
