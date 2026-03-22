@@ -11,6 +11,19 @@ The `main` branch targets MC 1.21.4+. The `1.21.1` and `1.20.1` branches both re
 
 All examples throughout this skill use `pushpush` as a stand-in for the actual new stuffy. Substitute the real name, constant, and identifier throughout.
 
+## Step 0 — Verify branch
+
+Run `git branch --show-current` and check the result.
+
+- **If the current branch is `main`**: proceed normally.
+- **If the current branch is anything else**: stop immediately and tell the user:
+
+  > `/backport-stuffy` must be run from the `main` branch. You are currently on `<branch>`. Please switch to `main` and re-run the command.
+
+  Do not proceed with any further steps.
+
+---
+
 ## Step 1 — Identify the new stuffy
 
 On `main`, find the most recently added StuffyBlock by checking `git log` for the newest commit that adds a block. Identify:
