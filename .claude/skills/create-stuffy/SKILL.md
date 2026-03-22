@@ -290,7 +290,54 @@ Insert it in alphabetical order by constant name among the existing `add` calls.
 
 ---
 
-## Step 7 — Summary
+## Step 7 — Update `README.md`
+
+File: `README.md`
+
+Append `- {display_name}` to the bulleted list of items under "It adds the following items with associated recipes and models:". Insert it at the end of the list (do not sort — the list is in no particular order).
+
+If an entry for `{display_name}` already exists in the list, skip silently.
+
+---
+
+## Step 8 — Bump version in `gradle.properties`
+
+File: `gradle.properties`
+
+### 8a. Read current version
+
+Read the `mod_version` value (e.g., `1.0-alpha.5`) and `target_version` value (e.g., `1.21.8`).
+
+### 8b. Check for a release tag
+
+Run:
+
+```
+git tag --list "{mod_version}+*"
+```
+
+- **No matching tags found**: The current branch is unreleased. No version change is needed — skip the rest of this step.
+- **At least one matching tag found**: A release has already been cut for this version. Compute the next version and update `gradle.properties`.
+
+### 8c. Compute next version
+
+Parse `mod_version` as a semantic version with an optional prerelease identifier. Supported formats:
+
+| Format | Example | Rule |
+|--------|---------|------|
+| Prerelease (alpha) | `1.0-alpha.5` | Increment the prerelease number: → `1.0-alpha.6` |
+| Prerelease (beta) | `2.1-beta.2` | Increment the prerelease number: → `2.1-beta.3` |
+| Stable release | `1.1.3` | Minor version bump, patch resets to 0: → `1.2.0` |
+
+For prerelease versions the identifier is the part after the `-` (e.g., `alpha.5`). Increment only the trailing numeric component of that identifier.
+
+### 8d. Write new version
+
+Update the `mod_version` line in `gradle.properties` with the computed next version. Preserve all surrounding content exactly.
+
+---
+
+## Step 9 — Summary
 
 After completing all steps, print a checklist showing which files were:
 - ✓ Found and validated (existing)
